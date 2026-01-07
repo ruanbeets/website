@@ -1,57 +1,56 @@
-export default function Home() {
+export default function HomePage() {
   return (
-    <section className="space-y-10">
-      <div className="space-y-6">
-        <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-          I build operational systems <br />
-          for real businesses
-        </h1>
+    <>
+      <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight mb-6">
+        Operational systems
+        <br />
+        built for real businesses
+      </h1>
 
-        <p className="text-slate-400 text-lg max-w-2xl">
-          Supply Chain graduate designing inventory, order, and analytics
-          platforms that replace fragile spreadsheets and manual workflows.
-        </p>
+      <p className="text-slate-400 max-w-2xl mb-10">
+        KRYX designs and builds internal platforms — inventory, operations,
+        analytics, and workflow systems — that replace fragile spreadsheets and
+        manual processes.
+      </p>
 
-        <div className="flex gap-4 pt-4">
-          <a
-            href="/projects"
-            className="px-6 py-3 bg-blue-600 rounded-lg hover:bg-blue-500 transition"
-          >
-            View Projects
-          </a>
-
-          <a
-            href="/contact"
-            className="px-6 py-3 border border-slate-700 rounded-lg hover:bg-slate-800 transition"
-          >
-            Contact
-          </a>
-        </div>
+      <div className="flex gap-4 mb-16">
+        <a
+          href="/projects"
+          className="bg-blue-600 hover:bg-blue-500 transition text-white px-5 py-2 rounded-md text-sm"
+        >
+          View Projects
+        </a>
+        <a
+          href="/contact"
+          className="border border-slate-700 hover:border-slate-500 transition px-5 py-2 rounded-md text-sm"
+        >
+          Contact
+        </a>
       </div>
 
-      <section className="grid md:grid-cols-3 gap-6 pt-20">
-        <div className="border border-slate-800 rounded-xl p-6">
-          <h3 className="font-semibold mb-2">Operational Systems</h3>
+      <div className="grid sm:grid-cols-3 gap-6">
+        <div className="border border-slate-800 rounded-lg p-6">
+          <h3 className="font-medium mb-2">Operational Systems</h3>
           <p className="text-slate-400 text-sm">
             Internal tools businesses rely on daily — inventory, orders, and
             workflows.
           </p>
         </div>
 
-        <div className="border border-slate-800 rounded-xl p-6">
-          <h3 className="font-semibold mb-2">System Design</h3>
+        <div className="border border-slate-800 rounded-lg p-6">
+          <h3 className="font-medium mb-2">System Design</h3>
           <p className="text-slate-400 text-sm">
             Clean data models, predictable flows, and scalable architecture.
           </p>
         </div>
 
-        <div className="border border-slate-800 rounded-xl p-6">
-          <h3 className="font-semibold mb-2">Delivery Focus</h3>
+        <div className="border border-slate-800 rounded-lg p-6">
+          <h3 className="font-medium mb-2">Delivery Focus</h3>
           <p className="text-slate-400 text-sm">
-            Practical solutions shipped fast — no overengineering.
+            Practical systems shipped fast — no overengineering.
           </p>
         </div>
-      </section>
-    </section>
+      </div>
+    </>
   );
 }

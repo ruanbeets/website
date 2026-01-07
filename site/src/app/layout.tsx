@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata = {
   title: "KRYX",
   description:
-    "KRYX builds operational systems, internal tools, and scalable software for real businesses.",
+    "KRYX designs operational systems for real businesses.",
 };
 
 export default function RootLayout({
@@ -17,16 +17,17 @@ export default function RootLayout({
       <body className="bg-slate-950 text-slate-100 antialiased">
         <header className="border-b border-slate-800">
           <nav className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            {/* Brand / Home link */}
             <Link
               href="/"
-              className="font-semibold tracking-widest text-sm hover:text-blue-400 transition-colors"
+              className="font-semibold tracking-widest hover:text-blue-400 transition"
             >
               KRYX
             </Link>
 
-            {/* Navigation */}
             <div className="space-x-6 text-slate-400 text-sm">
+              <Link href="/platform" className="hover:text-white transition">
+                Platform
+              </Link>
               <Link href="/projects" className="hover:text-white transition">
                 Projects
               </Link>
@@ -40,7 +41,9 @@ export default function RootLayout({
           </nav>
         </header>
 
-        <main className="max-w-6xl mx-auto px-6 py-16">{children}</main>
+        <main className="max-w-6xl mx-auto px-6 py-16">
+          {children}
+        </main>
 
         <footer className="border-t border-slate-800 mt-24">
           <div className="max-w-6xl mx-auto px-6 py-8 text-sm text-slate-500">

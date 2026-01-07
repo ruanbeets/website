@@ -1,22 +1,23 @@
 export default function AboutPage() {
   return (
-    <>
-      <h1 className="text-3xl font-semibold mb-6">About KRYX</h1>
+    <section className="space-y-8 max-w-3xl">
+      <h1 className="text-3xl font-semibold">About</h1>
 
-      <p className="text-slate-400 max-w-2xl mb-6">
-        KRYX is a systems-focused software studio building practical operational
-        platforms for growing businesses.
+      <p className="text-slate-400">
+        KRYX focuses on building practical operational systems that businesses
+        actually use.
       </p>
 
-      <p className="text-slate-400 max-w-2xl mb-6">
-        The focus is clarity, reliability, and systems that scale with real-world
-        operations — not complexity for its own sake.
+      <p className="text-slate-400">
+        My work sits at the intersection of operations, data, and software —
+        translating real-world business problems into reliable internal
+        platforms.
       </p>
 
-      <p className="text-slate-400 max-w-2xl">
-        Founded by a Supply Chain Management graduate with a strong operations
-        background, KRYX sits at the intersection of business, data, and software.
+      <p className="text-slate-400">
+        I value clarity, predictable systems, and delivery over unnecessary
+        complexity.
       </p>
-    </>
+    </section>
   );
 }

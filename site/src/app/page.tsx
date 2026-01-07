@@ -1,37 +1,35 @@
+import Link from "next/link";
+
 export default function HomePage() {
   return (
-    <>
-      <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight mb-6">
-        Operational systems
-        <br />
-        built for real businesses
-      </h1>
+    <section className="space-y-16">
+      <div className="max-w-3xl space-y-6">
+        <h1 className="text-4xl font-semibold leading-tight">
+          I design operational systems for real businesses.
+        </h1>
 
-      <p className="text-slate-400 max-w-2xl mb-10">
-        KRYX designs and builds internal platforms — inventory, operations,
-        analytics, and workflow systems — that replace fragile spreadsheets and
-        manual processes.
-      </p>
+        <p className="text-slate-400">
+          KRYX builds internal platforms — inventory, order management,
+          analytics, and workflows — not consumer apps or marketing sites.
+        </p>
 
-      <div className="flex gap-4 mb-16">
-        <a
-          href="/projects"
-          className="bg-blue-600 hover:bg-blue-500 transition text-white px-5 py-2 rounded-md text-sm"
+        <p className="text-slate-400">
+          For small to mid-sized businesses outgrowing spreadsheets and manual
+          processes.
+        </p>
+
+        <Link
+          href="/platform"
+          className="inline-block bg-blue-600 hover:bg-blue-500 transition text-white px-6 py-3 rounded-md text-sm"
         >
-          View Projects
-        </a>
-        <a
-          href="/contact"
-          className="border border-slate-700 hover:border-slate-500 transition px-5 py-2 rounded-md text-sm"
-        >
-          Contact
-        </a>
+          View SCM Platform →
+        </Link>
       </div>
 
-      <div className="grid sm:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
         <div className="border border-slate-800 rounded-lg p-6">
           <h3 className="font-medium mb-2">Operational Systems</h3>
-          <p className="text-slate-400 text-sm">
+          <p className="text-slate-400">
             Internal tools businesses rely on daily — inventory, orders, and
             workflows.
           </p>
@@ -39,18 +37,18 @@ export default function HomePage() {
 
         <div className="border border-slate-800 rounded-lg p-6">
           <h3 className="font-medium mb-2">System Design</h3>
-          <p className="text-slate-400 text-sm">
-            Clean data models, predictable flows, and scalable architecture.
+          <p className="text-slate-400">
+            Clean data models and predictable flows designed for scale.
           </p>
         </div>
 
         <div className="border border-slate-800 rounded-lg p-6">
           <h3 className="font-medium mb-2">Delivery Focus</h3>
-          <p className="text-slate-400 text-sm">
-            Practical systems shipped fast — no overengineering.
+          <p className="text-slate-400">
+            Practical systems shipped to solve real operational problems.
           </p>
         </div>
       </div>
-    </>
+    </section>
   );
 }

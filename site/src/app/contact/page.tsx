@@ -1,17 +1,18 @@
-export default function Contact() {
+export default function ContactPage() {
   return (
-    <section className="space-y-6 max-w-2xl">
-      <h1 className="text-3xl font-bold">Contact</h1>
+    <section className="space-y-8 max-w-2xl">
+      <h1 className="text-3xl font-semibold">Contact</h1>
 
       <p className="text-slate-400">
-        If you want to discuss a project, role, or collaboration:
+        If you want to discuss your operations or explore whether KRYX is a
+        fit, get in touch.
       </p>
 
-      <ul className="space-y-2 text-slate-400">
-        <li>Email: your@email.com</li>
-        <li>GitHub: github.com/ruanbeets</li>
-        <li>LinkedIn: linkedin.com/in/ruanbeets</li>
-      </ul>
+      <div className="text-slate-400 space-y-2">
+        <p>Email: your@email.com</p>
+        <p>GitHub: github.com/yourhandle</p>
+        <p>LinkedIn: linkedin.com/in/yourprofile</p>
+      </div>
     </section>
   );
 }
